@@ -1,0 +1,55 @@
+.body {
+  margin: 0px;
+}
+
+.widget {
+  width: 425px;
+  height: 425px;
+  background: #8cc9bc;
+
+  padding: 26px 0 0 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.widget__tittle {
+  font-family: Avenir, san-serif;
+  font-size: 29.4px;
+  font-weight: 400;
+  margin: 0;
+  text-align: center;
+}
+
+.widget__tittle::after {
+  content: "";
+  display: block;
+  width: 130px;
+  margin: 20px auto 0;
+  border-bottom: 2px solid #fff;
+}
+
+.modal {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border: 1px solid #000000;
+  position: relative;
+  background-color: #000;
+}
+
+.content {
+  position: absolute;
+  top: 50;
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  color: rgb(229, 23, 23);
+  border: 1px solid red;
+}
+
+.qqq {
+  width: 50px;
+  height: 50px;
+  top: 20;
+  color: rgb(219, 201, 201);
+}

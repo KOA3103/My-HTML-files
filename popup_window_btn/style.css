@@ -1,0 +1,79 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+.popup {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup__content {
+  background: #fff;
+
+  width: 400px;
+  height: 300px;
+
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  box-shadow: 10px 10px 30px rgb(51, 50, 50);
+  border-radius: 15px;
+}
+
+.popup__close {
+  position: absolute;
+  color: #fff;
+  font-size: 40px;
+  right: -150px;
+  top: -50px;
+
+  cursor: pointer;
+}
+
+.popup__close:hover {
+  text-shadow: 1px 1px 2px black, 0 0 1em rgb(49, 46, 46); /* Параметры тени */
+  color: white; /* Белый цвет текста */
+  /* font-size: 2em; Размер надписи */
+}
+
+.popup__toggle {
+  display: none;
+}
+
+.popup__toggle:checked + .popup {
+  display: flex;
+}
+
+.btn {
+  padding: 10px;
+  min-width: 100px;
+  /* color: rgb(65, 244, 6); */
+  background-color: rgb(77, 74, 74);
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid black;
+  box-shadow: 5px 5px 20px rgb(66, 63, 63);
+  color: white; /* Белый цвет текста */
+  /* font-size: 2em; Размер надписи */
+}
+.btn:hover {
+  text-shadow: 2px 2px 2px rgb(12, 12, 12), 0 0 1em rgb(222, 219, 218); /* Параметры тени */
+  cursor: pointer;
+}
+
+.popup__close-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}

@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.box {
+  min-width: 60px;
+  min-height: 50px;
+
+  background: orange;
+  margin: 0 auto 0 0;
+}
